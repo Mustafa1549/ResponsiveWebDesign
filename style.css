@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --maincolor: #fafafa;
+    --white: #ffffffa6;
+    --circle-1: #887a9c;
+    --circle-2: #4f93a6;
+    --text-1: rgba(129, 126, 126, 0.774);
+    --text-2: #a0d1df;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--maincolor);
+}
+
+/*Header Place*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 5px;
+    font-size: 30px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+}
+
+/*Logo Circle*/
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    background-color: var(--circle-1);
+    margin-left: 15px;
+}
+
+.circle-2 {
+    background-color: var(--circle-2);
+}
+
+/*Header End*/
+
+/*Info Place*/
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 60px 0;
+
+}
+
+.about-picture {
+    display: flex;
+    align-items: center;
+}
+
+.about-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .3s;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.about-picture img:hover {
+    transform: translateY(-5px);
+}
+
+.col-1 {
+    margin-left: -15px;
+
+}
+
+.col-2,
+.col-5 {
+    margin-bottom: 90px;
+
+}
+
+.about-info {
+    margin: 0 50px;
+
+}
+
+.about-info h1,
+p {
+    text-align: center;
+}
+
+.about-info h1 {
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 0.8px;
+}
+
+.about-info p {
+    font-size: 20px;
+    color: var(--text-1);
+}
+
+.about-info a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    color: var(--white);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+.btn-1 {
+    background-color: var(--text-2);
+    margin-bottom: 10px;
+}
+
+.btn-1 span {
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.btn-2 {
+    background-color: var(--circle-1);
+}
+
+/*Transition Line Start*/
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.way {
+    height: 40px;
+    border: 1px solid black;
+}
+
+.line-circle-1 {
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*Transition Line End*/
+
+/*Content Start*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 250px;
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 10px 5px;
+    border-radius: 5px;
+
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.info h3 {
+    font-size: 20px;
+    color: var(--circle-2);
+}
+
+.info h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.info p{
+    color: black;
+    text-align: center;
+}
+
+/*Content End*/
+
+/*Footer Start*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, transparent, rgba(0, 255, 0, .8)),
+        url('assets/pexels-айдана-тастамбек-15085918.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 400px;
+
+}
+
+footer h4,
+p {
+    color: white;
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+footer h4 {
+    opacity: 0.8;
+    margin: 10px 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+
+
+
+} 
+
+footer p {
+    font-size: 20px;
+
+}
+
+/*Footer End*/
